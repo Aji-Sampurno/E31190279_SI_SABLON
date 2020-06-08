@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 08, 2020 at 04:36 AM
+-- Generation Time: Jun 08, 2020 at 01:46 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -104,7 +104,7 @@ INSERT INTO `pemilik` (`id_pemilik`, `pasword`, `nama`, `alamat`, `umur`, `jenis
 CREATE TABLE `pesan` (
   `id_pesanan` varchar(5) DEFAULT NULL,
   `nama_pemesan` varchar(20) DEFAULT NULL,
-  `no_hp` int(15) DEFAULT NULL,
+  `no_hp` varchar(12) DEFAULT NULL,
   `alamat` varchar(255) DEFAULT NULL,
   `jenis_kain` varchar(5) DEFAULT NULL,
   `warna` varchar(30) DEFAULT NULL,
@@ -116,15 +116,23 @@ CREATE TABLE `pesan` (
   `l` int(255) DEFAULT NULL,
   `xl` int(255) DEFAULT NULL,
   `xxl` int(255) DEFAULT NULL,
-  `lain` int(255) DEFAULT NULL
+  `lain` int(255) DEFAULT NULL,
+  `harga` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `pesan`
 --
 
-INSERT INTO `pesan` (`id_pesanan`, `nama_pemesan`, `no_hp`, `alamat`, `jenis_kain`, `warna`, `jenis_sablon`, `jumlah`, `tanggal_pengambilan`, `s`, `m`, `l`, `xl`, `xxl`, `lain`) VALUES
-('01023', 'aji', 8000, 'malang', 'katun', 'biru', 'FO001', 10, '2020-06-12', 1, 1, 1, 1, 1, 5);
+INSERT INTO `pesan` (`id_pesanan`, `nama_pemesan`, `no_hp`, `alamat`, `jenis_kain`, `warna`, `jenis_sablon`, `jumlah`, `tanggal_pengambilan`, `s`, `m`, `l`, `xl`, `xxl`, `lain`, `harga`) VALUES
+('01023', 'aji', '8000', 'malang', 'katun', 'biru', 'FO001', 10, '2020-06-12', 1, 1, 1, 1, 1, 5, 0),
+('1', '1', '1', '1', '1', '1', 'FO001', 1, '2020-06-13', 1, 1, 1, 1, 1, 1, 0),
+('1', '111', '1', '1', '1', '1', 'FO001', 1, '2020-06-06', 1, 1, 1, 1, 1, 1, 0),
+('12', '1', '1', '1', '1', '1', 'FO002', 1, '2020-06-20', 1, 1, 1, 1, 1, 1, 0),
+('2', '1', '1', '1', '1', '1', 'FO001', 21, '2020-06-18', 2, 2, 2, 22, 2, 2, 0),
+('2', '12', '2', '21', '1221', '1212', 'FO001', 12, '2020-06-10', 2, 2, 2, 2, 2, 2, 0),
+('3', '12', '2', '21', '1221', '1212', 'FO002', 12, '2020-06-10', 2, 2, 2, 2, 2, 2, 0),
+('12', '12', '2112', '12', '21', '12', '12', 12, '2020-06-13', 21, 12, 12, 21, 21, 21, 12);
 
 -- --------------------------------------------------------
 
