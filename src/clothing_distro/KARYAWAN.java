@@ -371,7 +371,7 @@ public class KARYAWAN extends javax.swing.JFrame {
         area.setRows(5);
         jScrollPane1.setViewportView(area);
 
-        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 190, 430, 320));
+        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 80, 430, 420));
 
         jLabel24.setFont(new java.awt.Font("Swis721 Cn BT", 0, 30)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
@@ -538,7 +538,7 @@ public class KARYAWAN extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-    jTextField14.setText(j1.getText()+j8.getText());
+    jTextField14.setText("");
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
@@ -583,6 +583,7 @@ public class KARYAWAN extends javax.swing.JFrame {
         area.setText(area.getText()+"WARNA\t\t: "+j6.getText()+"\n");
         area.setText(area.getText()+"JENIS SABLON\t: "+j7.getText()+"\n");
         area.setText(area.getText()+"JUMLAH\t\t: "+j8.getText()+"\n");
+        area.setText(area.getText()+"HARGA\t\t: "+jTextField14.getText()+"\n");
         area.setText(area.getText()+"TANGGAL PENGAMBILAN\t: "+tanggal+"\n");
         area.setText(area.getText()+"SIZE\tS\t: "+j10.getText()+"\n");
         area.setText(area.getText()+"\tM\t: "+j11.getText());
@@ -764,7 +765,8 @@ void Tambah()
                     "','"+j12.getText()+
                     "','"+j13.getText()+
                     "','"+j14.getText()+
-                    "','"+j15.getText()+"')";
+                    "','"+j15.getText()+
+                    "','"+jTextField14.getText()+"')";
             
             int row = st.executeUpdate(sql);
             
