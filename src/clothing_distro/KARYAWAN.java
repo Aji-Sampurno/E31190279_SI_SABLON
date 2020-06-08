@@ -92,7 +92,6 @@ public class KARYAWAN extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jTextField14 = new javax.swing.JTextField();
-        jButton13 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         area = new javax.swing.JTextArea();
         jLabel24 = new javax.swing.JLabel();
@@ -358,15 +357,6 @@ public class KARYAWAN extends javax.swing.JFrame {
         });
         jPanel4.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 10, 310, -1));
 
-        jButton13.setFont(new java.awt.Font("Swis721 Cn BT", 0, 30)); // NOI18N
-        jButton13.setText("HARGA");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 520, -1, -1));
-
         area.setColumns(20);
         area.setRows(5);
         jScrollPane1.setViewportView(area);
@@ -537,12 +527,8 @@ public class KARYAWAN extends javax.swing.JFrame {
         selesai();
     }//GEN-LAST:event_jButton12ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-    jTextField14.setText("");
-    }//GEN-LAST:event_jButton13ActionPerformed
-
     private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
-        // TODO add your handling code here:
+        jTextField14.setText("");
     }//GEN-LAST:event_jTextField14ActionPerformed
 
     private void j15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j15ActionPerformed
@@ -705,7 +691,6 @@ public class KARYAWAN extends javax.swing.JFrame {
     private javax.swing.JTextField j8;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton8;
@@ -809,7 +794,8 @@ void selesai()
                     "','"+j12.getText()+
                     "','"+j13.getText()+
                     "','"+j14.getText()+
-                    "','"+j15.getText()+"')";
+                    "','"+j15.getText()+
+                    "','"+jTextField14.getText()+"')";
             
             int row = st.executeUpdate(sql);
             
