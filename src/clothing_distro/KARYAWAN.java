@@ -79,8 +79,6 @@ public class KARYAWAN extends javax.swing.JFrame {
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        j17 = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
         j11 = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
@@ -95,12 +93,11 @@ public class KARYAWAN extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jTextField14 = new javax.swing.JTextField();
         jButton13 = new javax.swing.JButton();
-        jLabel16 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         area = new javax.swing.JTextArea();
         jLabel24 = new javax.swing.JLabel();
         jButton12 = new javax.swing.JButton();
-        j16 = new javax.swing.JTextField();
+        j10 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -272,24 +269,6 @@ public class KARYAWAN extends javax.swing.JFrame {
         });
         jPanel4.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, 410, -1));
 
-        jButton11.setFont(new java.awt.Font("Swis721 Cn BT", 0, 30)); // NOI18N
-        jButton11.setText("PILIH");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 130, -1, -1));
-
-        j17.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
-        j17.setPreferredSize(new java.awt.Dimension(7, 43));
-        j17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j17ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(j17, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 130, 320, -1));
-
         jLabel17.setFont(new java.awt.Font("Swis721 Cn BT", 0, 30)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("S");
@@ -388,11 +367,6 @@ public class KARYAWAN extends javax.swing.JFrame {
         });
         jPanel4.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 520, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Swis721 Cn BT", 0, 30)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("DESAIN");
-        jPanel4.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 80, -1, -1));
-
         area.setColumns(20);
         area.setRows(5);
         jScrollPane1.setViewportView(area);
@@ -413,14 +387,14 @@ public class KARYAWAN extends javax.swing.JFrame {
         });
         jPanel4.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
 
-        j16.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
-        j16.setPreferredSize(new java.awt.Dimension(7, 43));
-        j16.addActionListener(new java.awt.event.ActionListener() {
+        j10.setFont(new java.awt.Font("Swis721 Cn BT", 0, 24)); // NOI18N
+        j10.setPreferredSize(new java.awt.Dimension(7, 43));
+        j10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j16ActionPerformed(evt);
+                j10ActionPerformed(evt);
             }
         });
-        jPanel4.add(j16, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 130, 130, -1));
+        jPanel4.add(j10, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 130, 130, -1));
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 10, 1370, 660));
 
@@ -555,16 +529,16 @@ public class KARYAWAN extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void j16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j16ActionPerformed
+    private void j10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j10ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_j16ActionPerformed
+    }//GEN-LAST:event_j10ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
+        selesai();
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        // TODO add your handling code here:
+    jTextField14.setText(j1.getText()+j8.getText());
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
@@ -591,14 +565,6 @@ public class KARYAWAN extends javax.swing.JFrame {
         j11.setText("");
     }//GEN-LAST:event_j11ActionPerformed
 
-    private void j17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j17ActionPerformed
-        j17.setText("");
-    }//GEN-LAST:event_j17ActionPerformed
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        selesai();
-    }//GEN-LAST:event_jButton11ActionPerformed
-
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         area.setText("***********************************************************\n");
         area.setText(area.getText()+"                       CLOTHING DISTRO                     \n");
@@ -618,7 +584,7 @@ public class KARYAWAN extends javax.swing.JFrame {
         area.setText(area.getText()+"JENIS SABLON\t: "+j7.getText()+"\n");
         area.setText(area.getText()+"JUMLAH\t\t: "+j8.getText()+"\n");
         area.setText(area.getText()+"TANGGAL PENGAMBILAN\t: "+tanggal+"\n");
-        area.setText(area.getText()+"SIZE\tS\t: "+j16.getText()+"\n");
+        area.setText(area.getText()+"SIZE\tS\t: "+j10.getText()+"\n");
         area.setText(area.getText()+"\tM\t: "+j11.getText());
         area.setText(area.getText()+"\n\tL\t: "+j12.getText());
         area.setText(area.getText()+"\n\tXL\t: "+j13.getText());
@@ -723,13 +689,12 @@ public class KARYAWAN extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea area;
     private javax.swing.JTextField j1;
+    private javax.swing.JTextField j10;
     private javax.swing.JTextField j11;
     private javax.swing.JTextField j12;
     private javax.swing.JTextField j13;
     private javax.swing.JTextField j14;
     private javax.swing.JTextField j15;
-    private javax.swing.JTextField j16;
-    private javax.swing.JTextField j17;
     private javax.swing.JTextField j2;
     private javax.swing.JTextField j3;
     private javax.swing.JTextField j4;
@@ -738,7 +703,6 @@ public class KARYAWAN extends javax.swing.JFrame {
     private javax.swing.JTextField j7;
     private javax.swing.JTextField j8;
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton5;
@@ -752,7 +716,6 @@ public class KARYAWAN extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -796,7 +759,7 @@ void Tambah()
                     "','"+j7.getText()+
                     "','"+j8.getText()+
                     "','"+tanggal+
-                    "','"+j17.getText()+
+                    "','"+j10.getText()+
                     "','"+j11.getText()+
                     "','"+j12.getText()+
                     "','"+j13.getText()+
@@ -839,7 +802,7 @@ void selesai()
                     "','"+j7.getText()+
                     "','"+j8.getText()+
                     "','"+tanggal+
-                    "','"+j17.getText()+
+                    "','"+j10.getText()+
                     "','"+j11.getText()+
                     "','"+j12.getText()+
                     "','"+j13.getText()+
